@@ -173,6 +173,9 @@ public class Principal extends javax.swing.JFrame {
         salir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         salir.setText("SALIR");
         salir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                salirMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 salirMouseEntered(evt);
             }
@@ -263,6 +266,10 @@ public class Principal extends javax.swing.JFrame {
         pantalla.setVisible(true);
         pantalla.setLocationRelativeTo(null);
     }//GEN-LAST:event_cargarMouseClicked
+
+    private void salirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_salirMouseClicked
 
    
 

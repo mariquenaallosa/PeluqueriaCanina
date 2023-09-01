@@ -25,10 +25,11 @@ public class CargaDatos extends javax.swing.JFrame {
         btnExit = new javax.swing.JPanel();
         txtExit = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
         jLabel10 = new javax.swing.JLabel();
+        jSeparator5 = new javax.swing.JSeparator();
         txtNombreP = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txtColor = new javax.swing.JTextField();
@@ -44,10 +45,9 @@ public class CargaDatos extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txtObs = new javax.swing.JTextArea();
         txtRaza = new javax.swing.JTextField();
-        jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
-        jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
+        jSeparator7 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -148,6 +148,7 @@ public class CargaDatos extends javax.swing.JFrame {
         txtExit.setForeground(new java.awt.Color(0, 0, 0));
         txtExit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtExit.setText("X");
+        txtExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txtExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txtExitMouseClicked(evt);
@@ -193,10 +194,6 @@ public class CargaDatos extends javax.swing.JFrame {
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bgMain.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 600, 90));
 
-        jSeparator1.setBackground(new java.awt.Color(98, 126, 216));
-        jSeparator1.setForeground(new java.awt.Color(98, 126, 216));
-        bgMain.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 330, 20));
-
         jSeparator2.setForeground(new java.awt.Color(98, 126, 216));
         bgMain.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 480, 290, 20));
 
@@ -207,11 +204,17 @@ public class CargaDatos extends javax.swing.JFrame {
         jLabel3.setText("Raza");
         bgMain.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 120, 40));
 
+        jSeparator3.setForeground(new java.awt.Color(98, 126, 216));
+        bgMain.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 290, 10));
+
         jLabel10.setFont(new java.awt.Font("Roboto", 1, 22)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(98, 126, 216));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel10.setText("Nombre");
         bgMain.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 120, 40));
+
+        jSeparator5.setForeground(new java.awt.Color(98, 126, 216));
+        bgMain.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 330, 20));
 
         txtNombreP.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreP.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
@@ -332,17 +335,14 @@ public class CargaDatos extends javax.swing.JFrame {
         txtRaza.setSelectionColor(new java.awt.Color(98, 126, 216));
         bgMain.add(txtRaza, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 330, 40));
 
-        jSeparator3.setForeground(new java.awt.Color(98, 126, 216));
-        bgMain.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 290, 10));
-
         jSeparator4.setForeground(new java.awt.Color(98, 126, 216));
         bgMain.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 330, 10));
 
-        jSeparator5.setForeground(new java.awt.Color(98, 126, 216));
-        bgMain.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 330, 10));
-
         jSeparator6.setForeground(new java.awt.Color(98, 126, 216));
         bgMain.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 330, 10));
+
+        jSeparator7.setForeground(new java.awt.Color(98, 126, 216));
+        bgMain.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 330, 10));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -428,12 +428,12 @@ public class CargaDatos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
     private javax.swing.JLabel logo;
     private javax.swing.JTextField txtCelular;
     private javax.swing.JTextField txtColor;
