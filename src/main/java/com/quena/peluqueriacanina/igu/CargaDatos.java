@@ -73,6 +73,9 @@ public class CargaDatos extends javax.swing.JFrame {
         txtLimpiar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txtLimpiar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txtLimpiar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtLimpiarMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 txtLimpiarMouseEntered(evt);
             }
@@ -406,6 +409,17 @@ public class CargaDatos extends javax.swing.JFrame {
         xMouse = evt.getX();
         yMouse = evt.getY();
     }//GEN-LAST:event_headerMousePressed
+
+    private void txtLimpiarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtLimpiarMouseClicked
+        txtNombreP.setText("");
+        txtRaza.setText("");
+        txtColor.setText("");
+        txtNombreD.setText("");
+        txtCelular.setText("");
+        txtObs.setText("");
+        cmbAlergico.setSelectedIndex(0);
+        cmbAtencion.setSelectedIndex(0);
+    }//GEN-LAST:event_txtLimpiarMouseClicked
 
    
 
