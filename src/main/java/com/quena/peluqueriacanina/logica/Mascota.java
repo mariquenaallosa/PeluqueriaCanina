@@ -1,21 +1,31 @@
 package com.quena.peluqueriacanina.logica;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
+@Entity
 public class Mascota {
+    @Id
+    @GeneratedValue(strategy=GenerationType.SEQUENCE)
     private int id_mascota;
+    
     private String nombre;
     private String raza;
     private String color;
-    private boolean alergico;
-    private boolean atencion_especial;
+    private String alergico;
+    private String atencion_especial;
     private String observaciones; 
 
+    @OneToOne
     private Duenio duenio;
 
     public Mascota() {
     }
 
-    public Mascota(int id_mascota, String nombre, String raza, String color, boolean alergico, boolean atencion_especial, String observaciones, Duenio duenio) {
+    public Mascota(int id_mascota, String nombre, String raza, String color, String alergico, String atencion_especial, String observaciones, Duenio duenio) {
         this.id_mascota = id_mascota;
         this.nombre = nombre;
         this.raza = raza;
@@ -25,6 +35,8 @@ public class Mascota {
         this.observaciones = observaciones;
         this.duenio = duenio;
     }
+
+   
 
     public int getId_mascota() {
         return id_mascota;
@@ -58,19 +70,19 @@ public class Mascota {
         this.color = color;
     }
 
-    public boolean isAlergico() {
+    public String isAlergico() {
         return alergico;
     }
 
-    public void setAlergico(boolean alergico) {
+    public void setAlergico(String alergico) {
         this.alergico = alergico;
     }
 
-    public boolean isAtencion_especial() {
+    public String isAtencion_especial() {
         return atencion_especial;
     }
 
-    public void setAtencion_especial(boolean atencion_especial) {
+    public void setAtencion_especial(String atencion_especial) {
         this.atencion_especial = atencion_especial;
     }
 
