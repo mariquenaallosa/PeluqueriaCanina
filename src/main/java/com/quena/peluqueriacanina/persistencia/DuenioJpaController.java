@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.quena.peluqueriacanina.persistencia;
 
 import com.quena.peluqueriacanina.logica.Duenio;
@@ -12,18 +8,20 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-/**
- *
- * @author Mariquena
- */
 public class DuenioJpaController implements Serializable {
 
     public DuenioJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
+    
+    public DuenioJpaController() {
+        emf = Persistence.createEntityManagerFactory("PerruqueriaPU");
+    }
+    
     private EntityManagerFactory emf = null;
 
     public EntityManager getEntityManager() {
