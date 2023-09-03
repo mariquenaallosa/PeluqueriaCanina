@@ -1,10 +1,15 @@
 package com.quena.peluqueriacanina.igu;
 
+import com.quena.peluqueriacanina.logica.Controladora;
 import java.awt.Color;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 public class CargaDatos extends javax.swing.JFrame {
 
     int xMouse, yMouse;
+
+    Controladora control = new Controladora();
 
     public CargaDatos() {
         initComponents();
@@ -106,6 +111,9 @@ public class CargaDatos extends javax.swing.JFrame {
         txtGuardar.setText("GUARDAR");
         txtGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txtGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtGuardarMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 txtGuardarMouseEntered(evt);
             }
@@ -362,23 +370,23 @@ public class CargaDatos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtLimpiarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtLimpiarMouseEntered
-        btnLimpiar.setBackground(new Color(98,126,216));
+        btnLimpiar.setBackground(new Color(98, 126, 216));
         txtLimpiar.setForeground(Color.white);
     }//GEN-LAST:event_txtLimpiarMouseEntered
 
     private void txtGuardarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtGuardarMouseEntered
-        btnGuardar.setBackground(new Color(98,126,216));
+        btnGuardar.setBackground(new Color(98, 126, 216));
         txtGuardar.setForeground(Color.white);
     }//GEN-LAST:event_txtGuardarMouseEntered
 
     private void txtLimpiarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtLimpiarMouseExited
         btnLimpiar.setBackground(Color.white);
-        txtLimpiar.setForeground(new Color(98,126,216));
+        txtLimpiar.setForeground(new Color(98, 126, 216));
     }//GEN-LAST:event_txtLimpiarMouseExited
 
     private void txtGuardarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtGuardarMouseExited
         btnGuardar.setBackground(Color.white);
-        txtGuardar.setForeground(new Color(98,126,216));
+        txtGuardar.setForeground(new Color(98, 126, 216));
     }//GEN-LAST:event_txtGuardarMouseExited
 
     private void cmbAtencionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAtencionActionPerformed
@@ -420,6 +428,39 @@ public class CargaDatos extends javax.swing.JFrame {
         cmbAlergico.setSelectedIndex(0);
         cmbAtencion.setSelectedIndex(0);
     }//GEN-LAST:event_txtLimpiarMouseClicked
+
+    private void txtGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtGuardarMouseClicked
+        String nombreP = txtNombreP.getText();
+        String raza = txtRaza.getText();
+        String color = txtColor.getText();
+        String observaciones = txtObs.getText();
+        String alergico = (String) cmbAlergico.getSelectedItem();
+        String atencion = (String) cmbAtencion.getSelectedItem();
+
+        String nombreDuenio = txtNombreD.getText();
+        String celular = txtCelular.getText();
+
+        control.guardar(nombreP , raza , color , observaciones , alergico , atencion, nombreDuenio, celular);
+        
+        JOptionPane optionPane = new JOptionPane("Datos guardados correcctamente");
+        optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        JDialog dialog = optionPane.createDialog("Guardado exitoso");
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
+        
+        
+        txtNombreP.setText("");
+        txtRaza.setText("");
+        txtColor.setText("");
+        txtNombreD.setText("");
+        txtCelular.setText("");
+        txtObs.setText("");
+        cmbAlergico.setSelectedIndex(0);
+        cmbAtencion.setSelectedIndex(0);
+        
+        
+        
+    }//GEN-LAST:event_txtGuardarMouseClicked
 
    
 
