@@ -36,15 +36,15 @@ public class Principal extends javax.swing.JFrame {
         bgMain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\allos\\Documents\\0-programacion\\PeluqueriaCanina\\src\\main\\java\\com\\quena\\peluqueriacanina\\imgs\\PERRUQUERIA.png")); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon("H:\\0-P\\PeluqueriaCanina\\src\\main\\java\\com\\quena\\peluqueriacanina\\imgs\\PERRUQUERIA.png")); // NOI18N
         bgMain.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, 380, 410));
 
-        bg.setIcon(new javax.swing.ImageIcon("C:\\Users\\allos\\Documents\\0-programacion\\PeluqueriaCanina\\src\\main\\java\\com\\quena\\peluqueriacanina\\imgs\\fondo.png")); // NOI18N
+        bg.setIcon(new javax.swing.ImageIcon("H:\\0-P\\PeluqueriaCanina\\src\\main\\java\\com\\quena\\peluqueriacanina\\imgs\\fondo.png")); // NOI18N
         bg.setText("jLabel1");
         bgMain.add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 464, 699));
 
         header.setBackground(new java.awt.Color(255, 255, 255));
-        header.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        header.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         header.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 headerMouseDragged(evt);
@@ -102,7 +102,7 @@ public class Principal extends javax.swing.JFrame {
         bgMain.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 30));
 
         btnCargar.setBackground(new java.awt.Color(98, 126, 216));
-        btnCargar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCargar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         cargar.setBackground(new java.awt.Color(255, 255, 255));
         cargar.setFont(new java.awt.Font("Changa One", 0, 24)); // NOI18N
@@ -135,7 +135,7 @@ public class Principal extends javax.swing.JFrame {
         bgMain.add(btnCargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 280, 90));
 
         btnVer.setBackground(new java.awt.Color(98, 126, 216));
-        btnVer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVer.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         ver.setBackground(new java.awt.Color(255, 255, 255));
         ver.setFont(new java.awt.Font("Changa One", 0, 24)); // NOI18N
@@ -165,7 +165,7 @@ public class Principal extends javax.swing.JFrame {
         bgMain.add(btnVer, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 280, 90));
 
         btnSalir.setBackground(new java.awt.Color(98, 126, 216));
-        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         salir.setBackground(new java.awt.Color(255, 255, 255));
         salir.setFont(new java.awt.Font("Changa One", 0, 24)); // NOI18N
