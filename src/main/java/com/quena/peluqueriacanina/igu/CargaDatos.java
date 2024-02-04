@@ -64,6 +64,7 @@ public class CargaDatos extends javax.swing.JFrame {
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\allos\\Documents\\0-programacion\\PeluqueriaCanina\\src\\main\\java\\com\\quena\\peluqueriacanina\\imgs\\PERRUQUERIA.png")); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon("H:\\0-P\\PeluqueriaCanina\\src\\main\\java\\com\\quena\\peluqueriacanina\\imgs\\PERRUQUERIA.png")); // NOI18N
         bgMain.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 140, 360, 410));
 
         btnLimpiar.setBackground(new java.awt.Color(255, 255, 255));
@@ -76,7 +77,6 @@ public class CargaDatos extends javax.swing.JFrame {
         txtLimpiar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtLimpiar.setText("LIMPIAR");
         txtLimpiar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        txtLimpiar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txtLimpiar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txtLimpiarMouseClicked(evt);
@@ -109,7 +109,6 @@ public class CargaDatos extends javax.swing.JFrame {
         txtGuardar.setForeground(new java.awt.Color(98, 126, 216));
         txtGuardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtGuardar.setText("GUARDAR");
-        txtGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txtGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txtGuardarMouseClicked(evt);
@@ -136,11 +135,11 @@ public class CargaDatos extends javax.swing.JFrame {
         bgMain.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 600, -1, -1));
 
         bg.setIcon(new javax.swing.ImageIcon("C:\\Users\\allos\\Documents\\0-programacion\\PeluqueriaCanina\\src\\main\\java\\com\\quena\\peluqueriacanina\\imgs\\fondo.png")); // NOI18N
+        bg.setIcon(new javax.swing.ImageIcon("H:\\0-P\\PeluqueriaCanina\\src\\main\\java\\com\\quena\\peluqueriacanina\\imgs\\fondo.png")); // NOI18N
         bg.setText("jLabel1");
         bgMain.add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(604, 0, 380, 699));
 
         header.setBackground(new java.awt.Color(255, 255, 255));
-        header.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         header.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 headerMouseDragged(evt);
@@ -159,7 +158,6 @@ public class CargaDatos extends javax.swing.JFrame {
         txtExit.setForeground(new java.awt.Color(0, 0, 0));
         txtExit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtExit.setText("X");
-        txtExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txtExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txtExitMouseClicked(evt);
