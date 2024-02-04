@@ -143,6 +143,9 @@ public class Principal extends javax.swing.JFrame {
         ver.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ver.setText("VER DATOS");
         ver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                verMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 verMouseEntered(evt);
             }
@@ -270,6 +273,13 @@ public class Principal extends javax.swing.JFrame {
     private void salirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirMouseClicked
         System.exit(0);
     }//GEN-LAST:event_salirMouseClicked
+
+    private void verMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verMouseClicked
+        VerDatos datos= new VerDatos();
+        datos.setVisible(true);
+        datos.setLocationRelativeTo(null);
+        
+    }//GEN-LAST:event_verMouseClicked
 
    
 

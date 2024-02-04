@@ -1,6 +1,7 @@
 package com.quena.peluqueriacanina.logica;
 
 import com.quena.peluqueriacanina.persistencia.ControladoraPersistencia;
+import java.util.List;
 
 
 public class Controladora {
@@ -26,6 +27,11 @@ public class Controladora {
          
          
          
+    }
+
+    public List<Mascota> traerMascotas() {
+        
+        return controlPersis.traerMascotas();
     }
    
    
